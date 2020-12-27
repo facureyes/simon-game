@@ -48,23 +48,23 @@ function checkUserAnswer(colour){
 function playSound(colour){
     switch (colour) {
         case "red":
-            $(".red").css("border","10px dotted white");
-            setTimeout(function(){ $(".red").css("border","10px solid black"); }, 100);   
+            $(".red").addClass("pressed");
+            setTimeout(function(){ $(".red").removeClass("pressed"); }, 100);   
             new Audio('sounds/red.mp3').play();
             break;
         case "green":
-            $(".green").css("border","10px dotted white");
-            setTimeout(function(){ $(".green").css("border","10px solid black"); }, 100);   
+            $(".green").addClass("pressed");
+            setTimeout(function(){ $(".green").removeClass("pressed"); }, 100);   
             new Audio('sounds/green.mp3').play();
             break;
         case "yellow":
-            $(".yellow").css("border","10px dotted white");
-            setTimeout(function(){ $(".yellow").css("border","10px solid black"); }, 100);   
+            $(".yellow").addClass("pressed");
+            setTimeout(function(){ $(".yellow").removeClass("pressed"); }, 100);   
             new Audio('sounds/yellow.mp3').play();
             break;
         case "blue":
-            $(".blue").css("border","10px dotted white");
-            setTimeout(function(){ $(".blue").css("border","10px solid black"); }, 100);   
+            $(".blue").addClass("pressed");
+            setTimeout(function(){ $(".blue").removeClass("pressed"); }, 100);   
             new Audio('sounds/blue.mp3').play();
             break;
         case "wrong":
